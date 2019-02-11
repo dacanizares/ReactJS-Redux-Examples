@@ -4,7 +4,7 @@ export const VisibilityFilterActionTypes = {
 }
 
 // Reducer
-const visibilityFilter = (state = 'SHOW_ALL', action) => {
+const visibilityFilter = (state = '', action) => {
     switch(action.type) {
         case VisibilityFilterActionTypes.SET_VISIBILITY_FILTER:
             return action.filter

@@ -5,7 +5,7 @@ describe('visibility filter reducer', () => {
   it('should handle initial state', () => {
     expect(
       visibilityFilter(undefined, {})
-    ).toEqual('SHOW_ALL')
+    ).toEqual('')
   })
 
   it('should handle SET_VISIBILITY_FILTER', () => {
