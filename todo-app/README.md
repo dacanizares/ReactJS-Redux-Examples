@@ -1,4 +1,4 @@
-> Based on Redux Official examples and https://egghead.io/lessons/react-redux-react-todo-list-example-adding-a-todo, I made minor changes to the code. ;)
+> Based on [Redux Official examples](https://redux.js.org/basics/basic-tutorial) and [egg.io Course by Dan Abramov](https://egghead.io/lessons/react-redux-react-todo-list-example-adding-a-todo). I made minor changes to the code to suite my programming style. ;)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
