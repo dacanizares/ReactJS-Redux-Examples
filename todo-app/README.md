@@ -1,3 +1,5 @@
+> Based on Redux Official examples and https://egghead.io/lessons/react-redux-react-todo-list-example-adding-a-todo, I made minor changes to the code. ;)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
