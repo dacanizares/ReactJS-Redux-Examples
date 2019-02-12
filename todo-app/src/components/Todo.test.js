@@ -1,5 +1,5 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import renderer from 'react-test-renderer'
 import Todo from './Todo'
 
 describe('Todo snapshot tests', () => {    
@@ -9,7 +9,7 @@ describe('Todo snapshot tests', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('renders correctly when completed', () => {
     const tree = renderer
       .create(<Todo onClick={() => {}} completed={false} text='Todo!' />)

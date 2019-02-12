@@ -1,8 +1,8 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import SingleForm from './SingleForm';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react'
+import renderer from 'react-test-renderer'
+import SingleForm from './SingleForm'
+import Enzyme, { mount } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 
 describe('SingleForm snapshot tests', () => {    
   it('renders correctly', () => {
