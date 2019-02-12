@@ -1,4 +1,4 @@
-> Based on [Redux Official examples](https://redux.js.org/basics/basic-tutorial) and [egg.io Course by Dan Abramov](https://egghead.io/lessons/react-redux-react-todo-list-example-adding-a-todo). I made minor changes to the code to suite my programming style. I've also refactored *AddTodo* to be a container without presentational responsibilities. ;)
+> Based on [Redux Official examples](https://redux.js.org/basics/basic-tutorial) and [egg.io Course by Dan Abramov](https://egghead.io/lessons/react-redux-react-todo-list-example-adding-a-todo). I made minor changes to the code to suite my programming style and I've added [Snapshot tests](https://github.com/dacanizares/ReactJS-Redux-Examples/blob/master/todo-app/src/components/Todo.test.js) and [Functional test](https://github.com/dacanizares/ReactJS-Redux-Examples/blob/master/todo-app/src/components/SingleForm.test.js) as an example on how you can test your components. I've also refactored *AddTodo* to be a container without presentational responsibilities. ;)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
