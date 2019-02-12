@@ -2,7 +2,13 @@ import SingleForm from '../components/SingleForm'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
-export default connect(
+const AddTodo = connect(
     null,
     {submitAction: addTodo}
-)(SingleForm)
+)(SingleForm);
+
+export default AddTodo;
+
+AddTodo.defaultProps = {
+    actionText: 'Add TO-DO'
+}
