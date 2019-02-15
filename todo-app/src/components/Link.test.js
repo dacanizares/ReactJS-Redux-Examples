@@ -10,7 +10,7 @@ describe('Link snapshot tests', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders correctly when un-active', () => {
+  it('renders correctly when inactive', () => {
     const tree = renderer
       .create(<Link active={false} onClick={() => {}}>Children text</Link>)
       .toJSON();
