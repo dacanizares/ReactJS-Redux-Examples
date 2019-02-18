@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList snapshot tests renders correctly when multiple todos 1`] = `
+<ul>
+  <Todo
+    completed={false}
+    id={1}
+    onClick={[Function]}
+    text="text"
+  />
+  <Todo
+    completed={true}
+    id={2}
+    onClick={[Function]}
+    text="text2"
+  />
+</ul>
+`;
+
+exports[`TodoList snapshot tests renders correctly when no todos 1`] = `<ul />`;

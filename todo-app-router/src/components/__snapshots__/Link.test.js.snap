@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link snapshot tests renders correctly when active 1`] = `
+<button
+  disabled={true}
+  onClick={[Function]}
+>
+  Children text
+</button>
+`;
+
+exports[`Link snapshot tests renders correctly when un-active 1`] = `
+<button
+  disabled={false}
+  onClick={[Function]}
+>
+  Children text
+</button>
+`;
