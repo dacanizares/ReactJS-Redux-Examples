@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot tests renders correctly 1`] = `
+<div>
+  <span>
+    Show: 
+  </span>
+  FilterLink
+  FilterLink
+  FilterLink
+</div>
+`;
