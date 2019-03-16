@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo snapshot tests renders correctly when completed 1`] = `
+<li
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  Todo!
+</li>
+`;
+
+exports[`Todo snapshot tests renders correctly when uncompleted 1`] = `
+<li
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  Todo!
+</li>
+`;
