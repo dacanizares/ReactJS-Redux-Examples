@@ -1,8 +1,7 @@
 import { VisibilityFilters } from '../actions'
 
 // Router Selectors
-const getVisibilityFilter = ({ match: { params } }) 
-  => params.filter || VisibilityFilters.SHOW_ALL
+const getVisibilityFilter = ({ match: { params } }) => params.filter || VisibilityFilters.SHOW_ALL
 
 // Redux Store Selectors
 const getTodos = (state) => state.todos
