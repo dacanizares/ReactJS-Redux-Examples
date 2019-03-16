@@ -1,9 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
+import throttle from 'lodash/throttle'
 import { createStore, compose, applyMiddleware } from 'redux'
 import todoApp from './reducers'
 import Root from './components/Root'
 import { loadState, saveState } from './localStorage'
+
 
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -14,13 +16,12 @@ const store = createStore(
     persistedState,
     composeEnhancers(applyMiddleware())
 )
-console.log(persistedState)
 
-store.subscribe(() => {
+store.subscribe(throttle(() => {    
     saveState({
         todos: store.getState().todos
     })
-})
+}, 1000))
 
 render(
     <Root store={store} />, 
