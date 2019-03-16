@@ -1,6 +1,6 @@
 import { TodosActionTypes } from '../reducers/todos'
 import { VisibilityFilterActionTypes } from '../reducers/visibilityFilter'
-import { v4 } from 'node-uuid'
+import v4 from 'uuid/v4'
 
 // Todo actions
 export const addTodo = text => ({
