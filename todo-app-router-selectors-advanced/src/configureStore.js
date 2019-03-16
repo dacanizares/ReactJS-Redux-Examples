@@ -5,9 +5,13 @@ import throttle from 'lodash/throttle'
 import todoApp from './reducers'
 
 const configureStore = () => {
-    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
     const persistedState = loadState()
+
+    let composeEnhancers = compose;
+    if (process.env.NODE_ENV !== 'production') {
+        composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    }
+    
     const store = createStore(
         todoApp,
         persistedState,
