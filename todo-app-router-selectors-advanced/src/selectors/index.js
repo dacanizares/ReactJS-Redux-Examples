@@ -1,4 +1,4 @@
-import { VisibilityFilters } from '../actions'
+import { VisibilityFilters } from '../common'
 
 // Router Selectors
 const getVisibilityFilter = ({ match: { params } }) => params.filter || VisibilityFilters.SHOW_ALL

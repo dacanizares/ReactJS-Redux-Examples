@@ -5,7 +5,7 @@ import App from './App'
 
 jest.mock('../containers/AddTodo', () => () => 'AddTodo')
 jest.mock('../containers/VisibleTodoList', () => () => 'VisibleTodoList')
-jest.mock('../containers/FilterLink', () => () => 'FilterLink')
+jest.mock('./FilterLink', () => () => 'FilterLink')
 
 describe('App basic tests', () => {    
   it('renders without crashing', () => {

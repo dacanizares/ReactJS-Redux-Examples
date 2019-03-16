@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import Footer from './Footer'
 
-jest.mock('../containers/FilterLink', () => () => 'FilterLink')
+jest.mock('./FilterLink', () => () => 'FilterLink')
 
 describe('Footer snapshot tests', () => {    
   it('renders correctly', () => {
