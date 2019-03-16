@@ -1,11 +1,11 @@
 import { TodosActionTypes } from '../reducers/todos'
 import { VisibilityFilterActionTypes } from '../reducers/visibilityFilter'
+import { v4 } from 'node-uuid'
 
 // Todo actions
-let nextTodoId = 0
 export const addTodo = text => ({
   type: TodosActionTypes.ADD_TODO,
-  id: nextTodoId++,
+  id: v4(),
   text
 })
 
