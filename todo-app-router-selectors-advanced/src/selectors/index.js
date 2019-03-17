@@ -4,7 +4,7 @@ import { VisibilityFilters } from '../common'
 const getVisibilityFilter = ({ match: { params } }) => params.filter || VisibilityFilters.SHOW_ALL
 
 // Redux Store Selectors
-const getTodos = (state) => state.todos
+const getTodos = (state) => Object.values(state.todos)
 
 // Advanced Selectors
 export const getVisibleTodos = (state, props) => {

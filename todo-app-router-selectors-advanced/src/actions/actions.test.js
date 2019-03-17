@@ -9,8 +9,8 @@ describe('actions unit test', () => {
   it('should return a valid ADD TODO', () => {
     const action = addTodo('my todo')
 
-    expect(isUUID(action.id)).toEqual(true)
-    expect(action.text).toEqual('my todo')
+    expect(isUUID(action.payload.id)).toEqual(true)
+    expect(action.payload.text).toEqual('my todo')
     expect(action.type).toEqual(TodosActionTypes.ADD_TODO)    
   })
 })
