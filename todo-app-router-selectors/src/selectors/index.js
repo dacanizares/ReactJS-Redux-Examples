@@ -6,6 +6,7 @@ import { VisibilityFilters } from '../actions'
 const getVisibilityFilter = (state, props) => props.filter
 const getTodos = (state) => state.todos
 
+// TODO: Check if memoization works
 export const getVisibleTodos = createSelector(
   [ getVisibilityFilter, getTodos ],
   (visibilityFilter, todos) => {
